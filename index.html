@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./index.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="content">
+      <div id="left">
+        <div id="text">
+          <h1>SummitSpecs</h1>
+          <p>Sign-Up to our website to get the latest news and offers.</p>
+        </div>
+      </div>
+      <div id="right">
+        <div id="dummy-text">
+          <p>
+            This is not a real online service! Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Necessitatibus, commodi!
+          </p>
+          <p>Sign up now to get started.</p>
+          <p id="standalone">You know you want to.</p>
+        </div>
+        <div id="form">
+          <form action="./index.php" method="POST">
+            <h1>Get Started</h1>
+            <div class="input">
+              <input
+                type="text"
+                name="first_name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="input">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="input">
+              <input type="text" name="phone" placeholder="Phone" required />
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                name="confirm_password"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+            <div class="input">
+              <input type="submit" name="submit" value="Create Account" />
+            </div>
+          </form>
+        </div>
+        <div id="sign-in">Already have an account? <a href="">Log in</a></div>
+      </div>
+    </div>
+  </body>
 </html>

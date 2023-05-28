@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#content {
+    display: flex;
+    width: 100vw;
+    height: 100vh
+}
+
+#left {
+    background-image: url("./sign-up.jpg");
+    width : 40vw;
+    background-size: cover;
+    height: 100%;
+}
