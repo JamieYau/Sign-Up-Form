@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: "Custom Font Bold";
-    src: url("./Poppins-Bold.ttf") format("truetype");
+  font-family: "Custom Font Bold";
+  src: url("./Poppins-Bold.ttf") format("truetype");
 }
 
 body {
@@ -21,8 +21,8 @@ body {
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .content {
@@ -76,16 +76,20 @@ h1 {
 }
 
 .right {
-    width: 60vw;
+  width: 60vw;
 }
 
 .dummy-text {
-    padding: 2rem 2rem 3rem 5rem;
-    font-family: 'Custom Font Bold';
-    font-size: 1.5rem;
+  padding: 2rem 2rem 3rem 5rem;
+  font-family: "Custom Font";
+  font-size: 1.5rem;
 }
 
-.dummy-text p:last-child {
+.dummy-text :nth-child(2) {
+  font-family: "Custom Font Bold";
+}
+
+.dummy-text p:not(:first-child) {
   margin-top: 1rem;
 }
 
@@ -110,19 +114,19 @@ form h2 {
   display: flex;
   flex-direction: column;
   width: 40%;
-  font-family: 'Custom Font';
+  font-family: "Custom Font";
 }
 
 input {
-    font-size: 1.3rem;
-    padding: 0.2rem 0.5rem;
-    border: 1px solid #a3a3a3;
-    border-radius: 3px;
+  font-size: 1.3rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
 }
 
 input:focus {
-    outline: none;
-    border: 2px solid #9588da;
+  outline: none;
+  border: 2px solid #9588da;
 }
 
 .btn-container {
@@ -142,10 +146,10 @@ input:focus {
 }
 
 #sign-in {
-    padding-left: 5rem;
+  padding-left: 5rem;
 }
 
 #sign-in a {
-    text-decoration: none;
-    color: #9588da;
+  text-decoration: none;
+  color: #9588da;
 }
