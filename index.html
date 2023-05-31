@@ -9,15 +9,16 @@
     <script src="./index.js"></script>
   </head>
   <body>
-    <div id="content">
-      <div id="left">
-        <div id="text">
+    <div class="content">
+      <div class="left">
+        <div class="title">
+          <img src="./mascot.png" alt="SummitSpecs Logo">
           <h1>SummitSpecs</h1>
-          <p>Sign-Up to our website to get the latest news and offers.</p>
         </div>
+        <p>Sign-Up to our website to get the latest news and offers.</p>
       </div>
-      <div id="right">
-        <div id="dummy-text">
+      <div class="right">
+        <div class="dummy-text">
           <p>
             This is not a real online service! Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Necessitatibus, commodi!
@@ -25,49 +26,37 @@
           <p>Sign up now to get started.</p>
           <p id="standalone">You know you want to.</p>
         </div>
-        <div id="form">
+        <div class="form">
           <form action="./index.php" method="POST">
-            <h1>Get Started</h1>
-            <div class="input">
-              <input
-                type="text"
-                name="first_name"
-                placeholder="First Name"
-                required
-              />
+            <div id="details">
+              <h1>Get Started</h1>
+              <label for="first_name">FIRST NAME</label>
+              <div class="input">
+                <input type="text" name="first_name" required />
+              </div>
+              <label for="last_name">LAST NAME</label>
+              <div class="input">
+                <input type="text" name="last_name" required />
+              </div>
+              <label for="email">EMAIL</label>
+              <div class="input">
+                <input type="email" name="email" required />
+              </div>
+              <label for="phone">PHONE</label>
+              <div class="input">
+                <input type="text" name="phone" required />
+              </div>
+              <label for="password">PASSWORD</label>
+              <div class="input">
+                <input type="password" name="password" required />
+              </div>
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <div class="input">
+                <input type="password" name="confirm_password" required />
+              </div>
             </div>
-            <div class="input">
-              <input
-                type="text"
-                name="last_name"
-                placeholder="Last Name"
-                required
-              />
-            </div>
-            <div class="input">
-              <input type="email" name="email" placeholder="Email" required />
-            </div>
-            <div class="input">
-              <input type="text" name="phone" placeholder="Phone" required />
-            </div>
-            <div class="input">
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="input">
-              <input
-                type="password"
-                name="confirm_password"
-                placeholder="Confirm Password"
-                required
-              />
-            </div>
-            <div class="input">
-              <input type="submit" name="submit" value="Create Account" />
+            <div class="create-btn">
+              <button type="submit">CREATE ACCOUNT</button>
             </div>
           </form>
         </div>
