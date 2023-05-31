@@ -12,7 +12,7 @@
     <div class="content">
       <div class="left">
         <div class="title">
-          <img src="./mascot.png" alt="SummitSpecs Logo">
+          <img src="./mascot.png" alt="SummitSpecs Logo" />
           <h1>SummitSpecs</h1>
         </div>
         <p>Sign-Up to our website to get the latest news and offers.</p>
@@ -26,39 +26,37 @@
           <p>Sign up now to get started.</p>
           <p id="standalone">You know you want to.</p>
         </div>
-        <div class="form">
-          <form action="./index.php" method="POST">
-            <div id="details">
-              <h1>Get Started</h1>
-              <label for="first_name">FIRST NAME</label>
-              <div class="input">
-                <input type="text" name="first_name" required />
-              </div>
-              <label for="last_name">LAST NAME</label>
-              <div class="input">
-                <input type="text" name="last_name" required />
-              </div>
-              <label for="email">EMAIL</label>
-              <div class="input">
-                <input type="email" name="email" required />
-              </div>
-              <label for="phone">PHONE</label>
-              <div class="input">
-                <input type="text" name="phone" required />
-              </div>
-              <label for="password">PASSWORD</label>
-              <div class="input">
-                <input type="password" name="password" required />
-              </div>
-              <label for="confirm_password">CONFIRM PASSWORD</label>
-              <div class="input">
-                <input type="password" name="confirm_password" required />
-              </div>
-            </div>
-            <div class="create-btn">
-              <button type="submit">CREATE ACCOUNT</button>
-            </div>
-          </form>
+        <form action="./index.php" method="POST" id="details-form">
+          <h2>Get Started</h2>
+          <div class="input">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" required />
+          </div>
+          <div class="input">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" required />
+          </div>
+          <div class="input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="input">
+            <label for="phone">PHONE</label>
+            <input type="text" name="phone" required />
+          </div>
+          <div class="input">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" required />
+          </div>
+          <div class="input">
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm_password" required />
+          </div>
+        </form>
+        <div class="btn-container">
+          <button type="submit" form="details-form" id="create-btn">
+            CREATE ACCOUNT
+          </button>
         </div>
         <div id="sign-in">Already have an account? <a href="">Log in</a></div>
       </div>
