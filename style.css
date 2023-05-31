@@ -61,7 +61,7 @@ h1 {
 form {
   display: flex;
   flex-flow: row wrap;
-  gap: 1rem;
+  gap: 2rem 4rem;
   padding: 0rem 5rem;
   padding-bottom: 3rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
