@@ -48,15 +48,16 @@
           </div>
           <div class="input">
             <label for="phone">PHONE</label>
-            <input type="text" name="phone" required />
+            <input type="tel" name="phone" required />
           </div>
           <div class="input">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" required class="error"/>
+            <input type="password" id="password" class="error" name="password" required/>
           </div>
           <div class="input">
             <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm_password" required class="error"/>
+            <input type="password" id="confirm_password" class="error" name="confirm_password" required/>
+            <span id="password-msg">* Passwords do not match</span>
           </div>
         </form>
         <div class="btn-container">
