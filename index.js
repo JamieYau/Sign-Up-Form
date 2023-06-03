@@ -159,9 +159,27 @@ form.addEventListener("submit", function (event) {
 
   if (isValid) {
     // Form is valid - submit the form or perform further actions
-    form.submit();
+    displaySuccess();
   } else {
     // Form is invalid - display an overall error message or take appropriate action
     console.log("Form is invalid");
   }
 });
+
+// add event listeners to close the pop-up
+const okayBtn = document.getElementById("okay-btn");
+okayBtn.addEventListener("click", function () {
+  overlay.style.display = "none";
+});
+
+// add event listeners to close the pop-up
+overlay.addEventListener("click", function () {
+  overlay.style.display = "none";
+});
+
+// function to display succesful signup
+function displaySuccess() {
+  // display overlay + pop-up
+  const overlay = document.getElementById("overlay");
+  overlay.style.display = "block";
+}
